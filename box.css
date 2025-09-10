@@ -1,0 +1,39 @@
+.heading {
+    padding: 10px 15px 20px 15px;
+    margin: 5px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.logo {
+    border-radius: 50%;
+}
+.box {
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+    padding: 15px;
+    border: 5px solid green;
+}
+.box1 {
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+    padding: 15px;
+    border: 5px solid green;
+    box-sizing: border-box;
+}
+p {
+    padding: 1em 2em;
+    margin: 5px 10px;
+    border: 5px solid blue;
+    width: 200px;
+}
+/*a {
+    padding: 1em 2em;
+    margin: 5px 10px;
+    border: 5px solid red;
+    width: 50px;
+    background-color: lime;
+    font-size: 1em;
+    display: block;
+}*/
