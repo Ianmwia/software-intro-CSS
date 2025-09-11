@@ -29,6 +29,12 @@ body {
     transform: scale(1.05);
 
 }
+.header h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333333;
+}
 .pfp img{
     border-radius: 50%;
 }
