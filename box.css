@@ -1,3 +1,52 @@
+body {
+    background-color: red;
+}
+
+@media only screen and (max-width:600px){
+    body {
+        background-color: aqua;
+    }
+        
+}
+@media only screen and (min-width:768px){
+    body {
+        background-color: yellow;
+    }
+        
+}
+@media only screen and (min-width:992px){
+    body {
+        background-color: blue;
+    }
+        
+}
+@media only screen and (min-width: 1200px){
+    body {
+        background-color: green;
+    }
+        
+}
+.col {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    color: white;
+}
+.colContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media only screen and (max-width: 900px){
+    .col{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .col{
+        width: 100%;
+    }
+}
 .heading {
     padding: 10px 15px 20px 15px;
     margin: 5px 10px;

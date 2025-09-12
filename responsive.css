@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    display: flex;
+    line-height: 1.6;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 15px 30px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: brown;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+#hero {
+    background: url("assets/tyla.webp") no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    text-align: center;
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+.btn {
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    padding:10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
